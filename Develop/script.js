@@ -60,4 +60,57 @@ function writePassword() {
         window.alert("The password WILL NOT contain special characters.");
       }
   }
+  // all falses
+  if (!confirmLowercase && !confirmUppercase && !confirmNumber && !confirmSpecialChars) {
+    choices = window.alert("You need to choose at least one option!");
+  }
+  //all trues
+  else if (confirmLowercase && confirmUppercase && confirmNumber && confirmSpecialChars) {
+    choices = lowercase.concat(uppercase, number, specialChars);
+  }
+  //three trues one false
+  else if (confirmLowercase && confirmUppercase && confirmNumber) {
+    choices = lowercase.concat(uppercase, number);
+  }
+  else if (confirmLowercase && confirmUppercase && confirmSpecialChars) {
+    choices = lowercase.concat(uppercase, specialChars);
+  }
+  else if (confirmLowercase && confirmNumber && confirmSpecialChars) {
+    choices = lowercase.concat(number, specialChars);
+  }
+  else if (confirmUppercase && confirmNumber && confirmSpecialChars) {
+    choices = uppercase.concat(number, specialChars);
+  }
+  //two trues two falses
+  else if (confirmLowercase && confirmUppercase) {
+    choices = lowercase.concat(uppercase);
+  }
+  else if (confirmLowercase && confirmNumber) {
+    choices = lowercase.concat(number);
+  }
+  else if (confirmLowercase && confirmSpecialChars) {
+    choices = lowercase.concat(specialChars);
+  }
+  else if (confirmUppercase && confirmNumber) {
+    choices = uppercase.concat(number);
+  }
+  else if (confirmUppercase && confirmSpecialChars) {
+    choices = uppercase.concat(specialChars);
+  }
+  else if (confirmNumber && confirmSpecialChars) {
+    choices = number.concat(specialChars);
+  }
+  //one tru 3 falses
+  else if (confirmLowercase) {
+    choices = lowercase;
+  }
+  else if (confirmUppercase) {
+    choices = uppercase;
+  }
+  else if (confirmNumber) {
+    choices = number;
+  }
+  else if (confirmSpecialChars) {
+    choices = specialChars;
+  }
 }
