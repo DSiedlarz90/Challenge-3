@@ -1,4 +1,6 @@
 // Assignment code here
+var input;
+var choices;
 var confirmLowercase;
 var confirmUppercase;
 var confirmNumber;
@@ -113,4 +115,17 @@ function writePassword() {
   else if (confirmSpecialChars) {
     choices = specialChars;
   }
+  var password = [];
+
+  for (var i = 0; i < input; i++) {
+    var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+    password.push(pickChoices);
+  }
+  var ps = password.join("");
+  UserInput(ps);
+  return ps;
+};
+function UserInput(ps) {
+  document.getElementById("password").textContent = ps;
 }
+
