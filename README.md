@@ -11,5 +11,5 @@ https://dsiedlarz90.github.io/Challenge-3/
 
 ## Screenshot of page
 
-![](./assets/images/screenshot.PNG)
+![ScreenShot](https://github.com/DSiedlarz90/Challenge-3/blob/main/assets/images/screenshot.png)
 
