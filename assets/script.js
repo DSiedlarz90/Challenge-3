@@ -1,4 +1,4 @@
-// Assignment code here
+//Global Variables
 var input;
 var choices;
 var confirmLowercase;
@@ -6,6 +6,7 @@ var confirmUppercase;
 var confirmNumber;
 var confirmSpecialChars;
 
+//Arrays for possible options to pull from for password
 lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
@@ -15,14 +16,13 @@ specialChars = ["!", "@", "#", "$", "%", "^", "&", "*",
 "(", ")", "<", ">", "?", ",", ".", "/", "-", "_", "=", "+"];
 
 
-// Get references to the #generate element
+//Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", function() {
   ps = writePassword();
 });
 
-// Write password to the #password input
-// Write password to the #password input
+//Function to ask questions in prompt windows on how to create password
 function writePassword() {
   input = window.prompt("Password length: Enter a number between 8 and 128.");
   var num = parseInt(input);
@@ -62,7 +62,7 @@ function writePassword() {
         window.alert("The password WILL NOT contain special characters.");
       }
   }
-  // all falses
+  // all falses error failsafe
   if (!confirmLowercase && !confirmUppercase && !confirmNumber && !confirmSpecialChars) {
     choices = window.alert("You need to choose at least one option!");
   }
@@ -125,6 +125,8 @@ function writePassword() {
   UserInput(ps);
   return ps;
 };
+
+//Function to put generated password onto page.
 function UserInput(ps) {
   document.getElementById("password").textContent = ps;
 }

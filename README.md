@@ -21,5 +21,5 @@ This is challenge 3 of the Bootcamp. A password Generator that takes user inputs
 
 
 ## Websites
-* Deployed Application:https://dsiedlarz90.github.io/Challenge-3/
+* Deployed Application: https://dsiedlarz90.github.io/Challenge-3/
 * Github Repository: https://github.com/DSiedlarz90/Challenge-3
