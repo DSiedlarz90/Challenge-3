@@ -16,7 +16,7 @@ This is challenge 3 of the Bootcamp. A password Generator that takes user inputs
 * Javascript
 
 ## Screenshot of page
-![](./assets/images/screenshot.PNG)
+![Code Quiz Demo](assets/images/screenshot.jpg)
 
 
 
